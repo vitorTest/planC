@@ -1,0 +1,1 @@
+When compiling, you need to add -std=c++11 to g++ command line.

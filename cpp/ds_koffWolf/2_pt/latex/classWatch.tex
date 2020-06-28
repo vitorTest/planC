@@ -1,0 +1,93 @@
+\hypertarget{classWatch}{}\section{Watch Class Reference}
+\label{classWatch}\index{Watch@{Watch}}
+
+
+{\ttfamily \#include $<$Watch.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWatch_af94b86136289f216efc480468318c432}{Watch}} (int hr, int min, int sec)
+\item 
+void \mbox{\hyperlink{classWatch_aa798aede56936dbc09f1e64219c65016}{fix\+\_\+watch}} (int hr, int min, int sec)
+\item 
+\mbox{\Hypertarget{classWatch_a25da86d24485ed73249612a087b087c7}\label{classWatch_a25da86d24485ed73249612a087b087c7}} 
+int {\bfseries get\+\_\+hour} () const
+\item 
+\mbox{\Hypertarget{classWatch_aa93c6311494648687c79acf8196e3b39}\label{classWatch_aa93c6311494648687c79acf8196e3b39}} 
+int {\bfseries get\+\_\+minutes} () const
+\item 
+\mbox{\Hypertarget{classWatch_ac0795b9989a0adf33b0b4fd58bac65ba}\label{classWatch_ac0795b9989a0adf33b0b4fd58bac65ba}} 
+int {\bfseries get\+\_\+seconds} () const
+\item 
+void \mbox{\hyperlink{classWatch_abdffd11033da593f1e1fdbb4dca36a33}{tik}} ()
+\item 
+bool \mbox{\hyperlink{classWatch_aa985979ff68c51a6bdfb92502ee84425}{operator==}} (const \mbox{\hyperlink{classWatch}{Watch}} \&watch) const
+\item 
+bool \mbox{\hyperlink{classWatch_abae1587719cf25b2b8628d10e6a3826d}{operator!=}} (const \mbox{\hyperlink{classWatch}{Watch}} \&watch) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWatch_a2d293008d3ef15986dcd1ae32b1e9420}\label{classWatch_a2d293008d3ef15986dcd1ae32b1e9420}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classWatch}{Watch}} \&w)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents the day\textquotesingle{}s hour 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWatch_af94b86136289f216efc480468318c432}\label{classWatch_af94b86136289f216efc480468318c432}} 
+\index{Watch@{Watch}!Watch@{Watch}}
+\index{Watch@{Watch}!Watch@{Watch}}
+\subsubsection{\texorpdfstring{Watch()}{Watch()}}
+{\footnotesize\ttfamily Watch\+::\+Watch (\begin{DoxyParamCaption}\item[{int}]{hr,  }\item[{int}]{min,  }\item[{int}]{sec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor of \mbox{\hyperlink{classWatch}{Watch}} object. \begin{DoxyItemize}
+\item hr Is the hour \item min Is the minute \item sec Is the second The default value to each one is 0. \end{DoxyItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWatch_aa798aede56936dbc09f1e64219c65016}\label{classWatch_aa798aede56936dbc09f1e64219c65016}} 
+\index{Watch@{Watch}!fix\+\_\+watch@{fix\+\_\+watch}}
+\index{fix\+\_\+watch@{fix\+\_\+watch}!Watch@{Watch}}
+\subsubsection{\texorpdfstring{fix\+\_\+watch()}{fix\_watch()}}
+{\footnotesize\ttfamily void Watch\+::fix\+\_\+watch (\begin{DoxyParamCaption}\item[{int}]{hr,  }\item[{int}]{min,  }\item[{int}]{sec }\end{DoxyParamCaption})}
+
+Fix the \mbox{\hyperlink{classWatch}{Watch}} to the correct hour \begin{DoxyItemize}
+\item hr Is the hour \item min Is the minute \item sec Is the second \end{DoxyItemize}
+\mbox{\Hypertarget{classWatch_abae1587719cf25b2b8628d10e6a3826d}\label{classWatch_abae1587719cf25b2b8628d10e6a3826d}} 
+\index{Watch@{Watch}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Watch@{Watch}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Watch\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWatch}{Watch}} \&}]{watch }\end{DoxyParamCaption}) const}
+
+An operator to compare two Watches, and verify if they have different times. \begin{DoxyReturn}{Returns}
+true if both Watches have not the same hour, or minutes or seconds. 
+
+false if both Watches have the same hour, minutes and seconds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWatch_aa985979ff68c51a6bdfb92502ee84425}\label{classWatch_aa985979ff68c51a6bdfb92502ee84425}} 
+\index{Watch@{Watch}!operator==@{operator==}}
+\index{operator==@{operator==}!Watch@{Watch}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Watch\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWatch}{Watch}} \&}]{watch }\end{DoxyParamCaption}) const}
+
+An operator to compare two Watches, and verify if they are with the same time. \begin{DoxyReturn}{Returns}
+true if both Watches have the same hour, minutes and seconds 
+
+false if both Watches have not the same hour, or minutes or seconds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWatch_abdffd11033da593f1e1fdbb4dca36a33}\label{classWatch_abdffd11033da593f1e1fdbb4dca36a33}} 
+\index{Watch@{Watch}!tik@{tik}}
+\index{tik@{tik}!Watch@{Watch}}
+\subsubsection{\texorpdfstring{tik()}{tik()}}
+{\footnotesize\ttfamily void Watch\+::tik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Advances the watch in a second 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Watch.\+h\item 
+Watch.\+cpp\end{DoxyCompactItemize}
